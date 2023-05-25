@@ -15,6 +15,9 @@ app.post('/api/post/autorize',(req,res)=>{
         res.status(400).json({"response":false})
     }
 })
+app.use('/',(req,res)=>{
+    res.json({massage:'Init'})
+})
 
 
 app.listen(5000, console.log('Node js server run at http://localhost:5000'))
